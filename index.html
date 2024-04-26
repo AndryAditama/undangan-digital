@@ -79,7 +79,7 @@
             </div>
 
             <div class="row couple m-2">
-                <div class="col-lg-6" data-aos="fade-right">
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="row align-items-center">
                         <div class="col-7 text-end">
                             <h4>Nobita</h4>
@@ -93,7 +93,7 @@
 
                 <span class="heart"><i class="bi bi-heart-fill" data-aos="fade-in" data-aos-delay="50"></i></span>
 
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
                     <div class="row align-items-center">
                         <div class=" col-5">
                             <img src="img/wanita.jpg" alt="Mempelai Wanita" class="img-responsive rounded-circle">
@@ -129,7 +129,7 @@
             </div>
 
             <div class="row  justify-content-center mt-4">
-                <div class="col-md-5 col-10" data-aos="fade-right">
+                <div class="col-md-5 col-10" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card text-center text-bg-light mb-5">
                         <div class="card-header">
                             AKAD NIKAH
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-10" data-aos="fade-left">
+                <div class="col-md-5 col-10" data-aos="zoom-in" data-aos-delay="400">
                     <div class="card text-center text-bg-light">
                         <div class="card-header jadwal">
                             RESEPSI
@@ -194,7 +194,7 @@
             <div class="row">
                 <div class="col">
                     <ul class="timeline">
-                        <li data-aos="fade-right">
+                        <li data-aos="zoom-in">
                             <div class="timeline-image" style="background-image: url(img/story1.jpg);">
                             </div>
                             <div class="timeline-panel">
@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted" data-aos="fade-left">
+                        <li class="timeline-inverted" data-aos="zoom-in">
                             <div class="timeline-image" style="background-image: url(img/story2.jpg);">
                             </div>
                             <div class="timeline-panel">
@@ -222,7 +222,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li data-aos="fade-right">
+                        <li data-aos="zoom-in">
                             <div class="timeline-image" style="background-image: url(img/story3.jpg);">
                             </div>
                             <div class="timeline-panel">
@@ -236,7 +236,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted" data-aos="fade-left">
+                        <li class="timeline-inverted" data-aos="zoom-in">
                             <div class="timeline-image" style="background-image: url(img/story4.jpg);">
                             </div>
                             <div class="timeline-panel">
@@ -267,19 +267,19 @@
             </div>
 
             <div class="row text-center text-lg-start justify-content-center" data-aos="fade-in">
-                <div class="col-lg-3 col-md-4 col-8">
+                <div class="col-lg-3 col-md-4 col-8" data-aos="fade-in" data-aos-delay="200">
                     <a href="img/pria.jpg" class="d-block mb-4 h-100" data-toggle="lightbox"
                         data-caption="This describes the image" data-gallery="My-Gallery">
                         <img class="img-fluid img-thumbnail" src="img/pria.jpg" alt="">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-8">
+                <div class="col-lg-3 col-md-4 col-8" data-aos="fade-in" data-aos-delay="400">
                     <a href="img/story4.jpg" class="d-block mb-4 h-100" data-toggle="lightbox"
                         data-caption="This describes the image" data-gallery="My-Gallery">
                         <img class="img-fluid img-thumbnail" src="img/story4.jpg" alt="">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-8">
+                <div class="col-lg-3 col-md-4 col-8" data-aos="fade-in" data-aos-delay="600">
                     <a href="img/wanita.jpg" class="d-block mb-4 h-100" data-toggle="lightbox"
                         data-caption="This describes the image" data-gallery="My-Gallery">
                         <img class="img-fluid img-thumbnail" src="img/wanita.jpg" alt="">
@@ -427,13 +427,14 @@
             delay: 0, // values from 0 to 3000, with step 50ms
             duration: 1100, // values from 0 to 3000, with step 50ms
             easing: 'ease', // default easing for AOS animations
+            mirror: true
         });
     </script>
 
     <script>
         simplyCountdown('.simply-countdown', {
             year: 2024, // required
-            month: 4, // required
+            month: 5, // required
             day: 15, // required
             hours: 8, // Default is 0 [0-23] integer
             words: { //words displayed into the countdown
