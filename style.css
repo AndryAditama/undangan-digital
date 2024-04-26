@@ -8,6 +8,7 @@
 body {
     font-size: 1rem;
     font-family: 'Work Sans', sans-serif;
+    width: 100vw;
 }
 
 .hero::before {
@@ -26,7 +27,7 @@ body {
 
 .hero {
     min-height: 100vh;
-    width: 100vh;
+
     position: relative;
 }
 
@@ -61,7 +62,7 @@ body {
 
 .mynavbar{
     display: none;
-    width: 100vw;
+
 }
 
 .mynavbar .container{
@@ -106,7 +107,7 @@ body {
     min-height: 100vh;
     padding: 6.8rem 0 5rem 0;
     position: relative;
-    width: 100vw;
+
 }
 
 .home h2,
@@ -188,7 +189,6 @@ body {
     color: white;
     padding-top: 6.8rem;
     min-height: 100vh;
-    width: 100vw;
 }
 
 .info .description {
@@ -212,7 +212,6 @@ body {
     background-size: cover;
     background-position: center;
     padding-bottom: 8rem;
-    width: 100vw;
 }
 
 .story span {
@@ -234,7 +233,7 @@ body {
     padding: 1.4rem 0;
     margin-top: 1rem;
     position: relative;
-    width: 100vw;
+
 }
 
 .timeline::before {
@@ -304,7 +303,7 @@ body {
     background-image: url(img/bg-home-dark.png);
     background-position: center;
     background-size: cover;
-    width: 100vw;
+
 }
 
 .gallery span, .gifts span {
@@ -338,7 +337,7 @@ body {
     background-image: url(img/bg-home.png);
     background-position: center;
     background-size: cover;
-    width: 100vw;
+
 }
 
 .rsvp button {
@@ -360,7 +359,7 @@ body {
     background-image: url(img/bg-home-dark.png);
     background-position: center;
     background-size: cover;
-    width: 100vw;
+
 }
 
 footer {
