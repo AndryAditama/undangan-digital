@@ -1,4 +1,5 @@
 :root {
+    --heart-color: #f14e95;
     --main-color: #f14e95;
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
@@ -27,7 +28,6 @@ body {
 
 .hero {
     min-height: 100vh;
-
     position: relative;
 }
 
@@ -106,7 +106,7 @@ body {
 
 
 .home {
-    background-image: url(img/bg-home.svg);
+    background-image: url(img/bg-black.svg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -120,7 +120,8 @@ body {
 .story h2,
 .gallery h2,
 .rsvp h2,
-.gifts h2 {
+.gifts h2,
+.yang-berbahagia h2 {
     font-family: 'Sacramento', cursive;
     color: var(--main-color);
     font-size: 3rem;
@@ -129,18 +130,18 @@ body {
 
 .home h5 {
     font-family: 'Work Sans', sans-serif;
-    color: #444;
-    font-size: 1.4rem;
+    color: white;
+    font-size: 1.1rem;
 }
 
 .home p {
     font-family: 'Work Sans', sans-serif;
-    color: #444;
-    font-size: 1.1rem;
+    color: white;
+    font-size: 1rem;
 }
 
 .home .couple {
-    margin-top: 40px !important;
+    margin-top: 25px !important;
     position: relative;
 }
 
@@ -170,7 +171,7 @@ body {
 
 .home .heart i {
     margin: auto;
-    color: var(--main-color);
+    color: var(--heart-color);
 }
 
 .bi-heart-fill {
@@ -178,11 +179,12 @@ body {
 }
 
 .home .hadits {
-    padding-top: 2rem;
+    padding-top: 1.7rem;
 }
 
 .home .hadits p {
     font-size: 0.9rem;
+    font-weight: 300;
 }
 
 @keyframes flip {
@@ -196,10 +198,10 @@ body {
 }
 
 .info {
-    background-image: url(img/bg-black.svg);
+    background-image: url(img/bg-home.svg);
     background-position: center;
     background-size: cover;
-    color: white;
+    color: #444;
     padding-top: 5rem;
     min-height: 100vh;
 }
@@ -208,9 +210,10 @@ body {
     font-weight: 300;
 }
 
+
 .info .card {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    color: white !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    color: #444 !important;
     border: 1px solid #999;
 }
 
@@ -227,7 +230,7 @@ body {
     padding-bottom: 8rem;
 }
 
-.story span {
+.story span, .yang-berbahagia span {
     text-transform: uppercase;
     color: #666;
     font-size: 0.9rem;
@@ -319,7 +322,7 @@ body {
 
 }
 
-.gallery span, .gifts span {
+.gallery span, .gifts span{
     text-transform: uppercase;
     color: white;
     font-size: 0.9rem;
@@ -375,27 +378,71 @@ body {
 
 }
 
+.yang-berbahagia {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    min-height: 100vh;
+    background-image: url(img/bg-home.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.yang-berbahagia p {
+    color: #444;
+    margin-bottom: 3.4rem;
+}
+
+.yang-berbahagia .mempelai {
+    display: flex;
+    flex-direction: row;
+}
+
+.yang-berbahagia .mempelai h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yang-berbahagia .mempelai img {
+    width: 65px;
+    margin: 13px;
+}
+
+.arabic {
+    color: white;
+    font-size: 1.2rem;
+    margin: 1.1rem;
+}
+
+
 footer {
     background-color: var(--main-color);
     color: white;
     width: 100vw;
+    
 }
 
 footer .container {
-    padding: 10px 0 70px 0;
+    padding: 10px 0 60px 0;
 }
 
 footer h4{
     font-size: 1rem;
+    font-weight: 300;
 }
 
 footer i {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
-footer .sosmed a{
-    margin: 0 4px;
-    color: var(--bg);
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 
@@ -506,6 +553,10 @@ footer .sosmed a{
         margin-top: 0px !important;
     }
 
+    .yang-berbahagia {
+        padding-top: 12rem;
+    }
+
 }
 
 /* tablet */
@@ -579,6 +630,10 @@ footer .sosmed a{
     width: 50%;
     }
 
+    .yang-berbahagia {
+        padding-top: 12rem;
+    }
+
 
 }
 
@@ -618,6 +673,10 @@ footer .sosmed a{
     }
     .gallery-item {
     width: 100%;
+    }
+
+    .yang-berbahagia {
+        padding-top: 10rem;
     }
 
 }
