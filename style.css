@@ -43,6 +43,11 @@ body {
 
 .hero h4 {
     font-size: 1.3rem;
+    line-height: 2.4rem;
+}
+
+.hero h4 span {
+    font-size: 1.7rem;
 }
 
 .hero p {
@@ -105,7 +110,7 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    padding: 6.8rem 0 5rem 0;
+    padding: 5rem 0 5rem 0;
     position: relative;
 
 }
@@ -172,6 +177,14 @@ body {
     animation: flip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.5s infinite both;
 }
 
+.home .hadits {
+    padding-top: 2rem;
+}
+
+.home .hadits p {
+    font-size: 0.9rem;
+}
+
 @keyframes flip {
     0% {
         transform: rotateY(0);
@@ -187,7 +200,7 @@ body {
     background-position: center;
     background-size: cover;
     color: white;
-    padding-top: 6.8rem;
+    padding-top: 5rem;
     min-height: 100vh;
 }
 
@@ -207,7 +220,7 @@ body {
 }
 
 .story {
-    padding-top: 6.8rem;
+    padding-top: 5rem;
     background-image: url(img/bg-home.svg);
     background-size: cover;
     background-position: center;
@@ -297,8 +310,8 @@ body {
 }
 
 .gallery {
-    padding-top: 6.8rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     min-height: 100vh;
     background-image: url(img/bg-black.svg);
     background-position: center;
@@ -331,8 +344,8 @@ body {
 }
 
 .rsvp {
-    padding-top: 6.8rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     min-height: 100vh;
     background-image: url(img/bg-home.svg);
     background-position: center;
@@ -353,8 +366,8 @@ body {
 }
 
 .gifts {
-    padding-top: 6.8rem;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     min-height: 100vh;
     background-image: url(img/bg-black.svg);
     background-position: center;
@@ -501,9 +514,14 @@ footer .sosmed a{
         font-size: 68%;
     }
 
+    .simply-countdown {
+        display: flex;
+        justify-content: center;
+    }
+
     .simply-countdown>.simply-section {
         padding: 35px;
-        margin: 6px;
+        margin: 16px;
     }
 
     .mynavbar .container {
@@ -529,6 +547,18 @@ footer .sosmed a{
     .home .couple h4,
     .home .couple p {
         align-items: center;
+    }
+
+    .home {
+        padding: 4.5rem 0 3rem 0;
+    }
+
+    .home .info-acara {
+        margin-bottom: 1rem !important;
+    }
+
+    .home .couple {
+        margin-top: 1rem !important;
     }
 
     .timeline::before {
@@ -558,8 +588,12 @@ footer .sosmed a{
         font-size: 64%;
     }
 
+    .simply-countdown {
+        justify-content: space-evenly;
+    }
+
     .simply-countdown>.simply-section {
-        padding:32px;
+        padding:28px;
         margin: 5px;
     }
     .timeline li {

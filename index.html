@@ -35,14 +35,14 @@
     <section id="hero"
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
-            <h4 data-aos="fade-down">Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
             <h1 data-aos="fade-down">Nobita & Shizuka</h1>
             <p data-aos="fade-down">Akan melangsungkan pernikahan dalam:</p>
 
             <div class="simply-countdown" data-aos="fade-in"></div>
 
-            <a href="#home" class="btn btn-md mt-4 btnShow" onclick="enableScroll()">Lihat
+            <a href="#home" class="btn btn-md mt-4 mb-5 btnShow" onclick="enableScroll()">Lihat
                 Undangan</a>
+            <h4 data-aos="fade-up">Kepada Yth: Bapak/Ibu/Saudara/i, <br><span></span></h4>
         </main>
     </section>
 
@@ -68,7 +68,7 @@
 
     <section id="home" class="home">
         <div class="container">
-            <div class="row justify-content-center mb-6">
+            <div class="row info-acara justify-content-center mb-6">
                 <div class="col-md-8 text-center" data-aos="fade-down">
                     <h2>Acara Pernikahan</h2>
                     <h5>Diselenggarakan pada 15 April 2024 di Pamekasan Jawa Timur</h5>
@@ -105,8 +105,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row justify-content-center">
+                <div class="hadits col-md-8 text-center" data-aos="fade-up">
+                    <p>Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari
+                        jenismu
+                        sendiri, agar kamu cenderung dan merasa tenteram kepadanya. dan Dia menjadikan di antaramu rasa
+                        kasih dan sayang. Sungguh pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran
+                        Allah)
+                        bagi kaum yang berfikir.</p>
+                    <p>( Ar-Rum 21 )</p>
+                </div>
+            </div>
         </div>
-        </div>
+
     </section>
 
     <section id="info" class="info">
@@ -114,7 +126,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 col-10 text-center" data-aos="fade-down">
                     <h2>Informasi Acara</h2>
-                    <p class="alamat" data-aos="fade-down">Acara akan dilaksanakan di Gedung Bakorwil Pamekasan <br>
+                    <p class="alamat">Acara akan dilaksanakan di Gedung Bakorwil Pamekasan <br>
                         Jl. Slamet Riadi No.1, RW.08, Rw. 08, Barurambat Kota, Kec. Pamekasan, Kabupaten Pamekasan, Jawa
                         Timur</p>
                     <a href="https://maps.app.goo.gl/PddsSaPp2oLGNHnW9" target="_blank"
@@ -556,7 +568,7 @@
         console.log(nama);
 
         const namaTamu = document.querySelector('.hero h4 span');
-        namaTamu.innerHTML = `${p} ${nama},`.replace(/ ,$/, ',');
+        namaTamu.innerHTML = `${nama}`.replace(/ ,$/);
 
         document.querySelector('#nama').value = nama;
     </script>
